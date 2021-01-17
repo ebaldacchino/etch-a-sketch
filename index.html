@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Etch-A-Sketch</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<header>
+			<h1>Etch-A-Sketch</h1>
+
+			<article class="controller">
+				<button id="rgb" class='active'>rainbow <i class="fas fa-rainbow"></i></button>
+				<button id="grey-scale">
+					grey scale <i class="fas fa-pencil-alt"></i>
+				</button>
+				<button id="erase">erase <i class="fas fa-eraser"></i></button>
+				<button id="picker">pick: <input type="color" /></button>
+			</article>
+		</header>
+		<main class="grid"></main>
+		<article>
+			<button id="clear">clear <i class="fas fa-trash"></i></button>
+			<label for="range"
+				>grid size
+				<input type="range" min="1" max="100" name="range" id="range"
+			/></label>
+		</article>
+		<script src="app.js"></script>
+	</body>
+</html>
