@@ -16,6 +16,7 @@ body {
 	background-color: var(--void);
 	color: var(--stark);
 	height: 100vh;
+	max-height: 100vh;
 	justify-content: space-around;
 	align-items: stretch;
 	overflow: hidden;
